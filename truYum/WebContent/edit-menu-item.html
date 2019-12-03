@@ -1,0 +1,89 @@
+<!Doctype html>
+<html>
+<head>
+<title>Edit Menu Item</title>
+<script type="text/javascript" src="js/script.js">
+
+</script>
+<link rel="stylesheet" href="style/style.css"/>
+
+<style type="text/css">
+.body-main th
+{
+text-align:left;
+padding-top:20px;
+}
+.body-main td
+{
+text-align:left;
+}
+button[type="submit"]
+{
+padding-top:15px;
+padding-bottom:15px;
+padding-left:15px;
+padding-right:15px;
+background-color:#004080;
+color:white;
+border:0;
+
+}              
+</style>
+</head>
+<body>
+<header class="header container-fluid">
+                <h2 class="header-itemleft">truYum</h2>
+                <img src="images/truYum_logo.png" class="center">
+                <a class="header-itemright" href="menu-item-list-admin.html" style="margin:15px;">Menu</a>  
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+</header>          
+
+<section class="body-main" style="overflow-x:auto;">
+     
+                <h1 class="style-color">Edit Menu item</h1>
+                <form name="editMenuForm" action="#" method="post" onsubmit="validateMenuItem()">
+        <table style="width:100%" id="">
+                <tr><th colspan="4"><label for="mname">Name<th></tr><br>
+                <tr><td colspan="4"><input type="text" id="mname" style="width:50%" name="mname"></td></tr>
+                <tr>
+                <th><label for="price">Price</th>
+                <th><label for="active">Active</th>
+                <th><label for="launch">Date of Launch</th>
+                <th><label for="category">Category</th>
+                </tr>
+
+                <tr>
+                <td><input type="text" name="price" id="price"></td>
+                <td><input type="radio" name="available" value="yes" id="active">Yes
+                <input type="radio" name="available" value="no" id="active">No
+                </td>
+                <td><input type="date" name="launch" id="launch"></td>
+                <td>
+                <select name="category" id="category">
+                <option value="empty">    </option>
+                <option value="Fast food">Fast food</option>
+                <option value="Main course">Main course</option>
+                <option value="Dessert">Dessert</option>
+                <option value="Drinks">Drinks</option>
+                </select></td>
+                </tr>
+
+                <tr>
+                <td><input type="checkbox" name="freedelivery" name="free" checked>
+                <label>Free Delivery</label><td>
+                </tr>
+
+                <tr>
+                <td><a href="edit-menu-item-status.html" style="color:white;"><button type="submit" name="save" value="Save">Save</a></td></button>
+                </tr>
+
+
+               </table>
+        </form>
+</section>
+
+<footer class="footer container-fluid">
+                <p>&nbsp;&nbsp;Copyright &copy; 2019</p>
+</footer>
+</body>
+</html>
